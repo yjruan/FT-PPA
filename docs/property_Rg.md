@@ -18,8 +18,8 @@
 
 ## Examples
 ```text
-property ConLen dump.PPA_0  NC 300  Ne 20
-property ConLen dump.cfg_*  NC 500  Ne 20 format cfg
+property Rg dump.PPA_0  NC 300  
+property Rg dump.cfg_*  NC 500  MaxMP 10 format cfg
 ```
 ## Description
 The `property Rg` command calculates the mean-square radius of gyration for linear chains. In future versions, this function will be extended to polymer chains with arbitrary topologies.
