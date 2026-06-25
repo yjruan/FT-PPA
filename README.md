@@ -18,6 +18,28 @@ Users are welcome to try this program and provide feedback.
 Any comments or suggestions will be greatly appreciated, and the program will be continuously improved in future updates.
 If possible, please cite Macromolecules 2024, 57, 2792.
 
+## Quick Start
+
+Nexus is fully written in Fortran. 
+Since the current version has only been tested with the Intel Fortran compiler, users are recommended to compile the program using the Intel compiler.
+
+To compile the program, enter the `src` directory and run:
+
+```bash
+make
+```
+
+After successful compilation, an executable file named `Nexus` will be generated. The program can then be executed by typing:
+
+```bash
+./Nexus
+```
+
+By default, Nexus searches for an input file named `input.dat` in the current directory. The analysis task, input configuration file, output file name, and other parameters should be specified in `input.dat`.
+
+After reading `input.dat`, Nexus will perform the selected analysis task from the modules listed in the [Features Overview](#features-overview) section(#features-overview).
+
+
 
 
 ## Features Overview
