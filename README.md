@@ -24,8 +24,9 @@ If possible, please cite Macromolecules 2024, 57, 2792.
 - [1. FT-PPA: Entanglement Analysis](docs/FT-PPA.md)
   - [1.1 Statistics](docs/FT-PPA_Stat.md)
   - [1.2 Visualization](docs/FT-PPA_Dump.md)
+
 - [2. Property: Chain Analysis](docs/property.md)
-  - [2.1 Radius of Gyration]
+  - [2.1 Radius of Gyration](docs/property_Rg.md)
   - [2.2 End-to-End Distance]
   - [2.3 Contour Length of Primitive Path](docs/property_Conlen.md)
 
