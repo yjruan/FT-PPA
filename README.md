@@ -37,7 +37,7 @@ After successful compilation, an executable file named `Nexus` will be generated
 
 By default, Nexus searches for an input file named `input.dat` in the current directory. The analysis task, input configuration file, output file name, and other parameters should be specified in `input.dat`.
 
-After reading `input.dat`, Nexus will perform the selected analysis task from the modules listed in the [Features Overview](#features-overview) section(#features-overview).
+After reading `input.dat`, Nexus will perform the selected analysis task from the modules listed in the [Features Overview](#features-overview) section.
 
 
 
