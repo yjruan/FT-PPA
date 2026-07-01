@@ -22,27 +22,15 @@ Z1+ code is another widely used primitive path analysis for entangled polymers. 
 
 ## Quick Start
 
-Nexus is fully written in Fortran. 
-Since the current version has only been tested with the Intel Fortran compiler, users are recommended to compile the program using the Intel compiler.
+`Nexus` is written in Fortran.
+Users can either compile the program from source code or directly use the precompiled executable files provided for Linux and Windows.
+- [Compile from Source on Linux](docs/QS_Complie.md)
+- [Use Precompiled Executable Files](docs/property.md)
 
-To compile the program, enter the `src` directory and run:
-
-```bash
-make
-```
-
-After successful compilation, an executable file named `Nexus` will be generated. The program can then be executed by typing:
-
-```bash
-./Nexus
-```
-
-By default, Nexus searches for an input file named `input.dat` in the current directory. The analysis task, input configuration file, output file name, and other parameters should be specified in `input.dat`.
-
+By default, `Nexus` searches for an input file named `input.dat` in the current directory. The analysis task, input configuration file, output file name, and other parameters should be specified in `input.dat`.
 After reading `input.dat`, Nexus will perform the selected analysis task from the modules listed in the [Features Overview](#features-overview) section.
 
-
-
+Users can find test configurations and their corresponding analysis results in the `example` directory, which can be used to check the input format and verify the program output.
 
 ## Features Overview
 - [1. FT-PPA: Entanglement Analysis](docs/FT-PPA.md)
