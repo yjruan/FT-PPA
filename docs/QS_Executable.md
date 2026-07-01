@@ -22,4 +22,4 @@ For Windows users, run the executable file from the command line:
 Nexus.exe
 ```
 
-In both cases, Nexus will automatically search for `input.dat`, read the analysis settings, and perform the corresponding calculation listed in the [Features Overview](#features-overview) section.
+In both cases, Nexus will automatically search for `input.dat`, read the analysis settings, and perform the corresponding calculation listed in the [Features Overview](../README.md#features-overview) section.
