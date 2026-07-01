@@ -5,7 +5,7 @@ For users who do not want to compile the source code, precompiled executable fil
 Users can download the appropriate executable file according to their operating system:
 
 * Linux executable: `Nexus`
-* [Windows executable](https://github.com/yjruan/Nexus/releases/Nexus-windows.zip)
+* [Windows executable](https://github.com/yjruan/Nexus/releases/latest/download/Nexus-windows.zip)
 
 After downloading and extracting the file, place `input.dat` in the same working directory as the executable file.
 
