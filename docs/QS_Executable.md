@@ -1,13 +1,25 @@
-For users who do not want to compile the source code, precompiled executable files are also provided for Linux and Windows.
+### Use Precompiled Executable Files
 
-Linux executable: Nexus for Linux
-Windows executable: Nexus.exe for Windows
+For users who do not want to compile the source code, precompiled executable files for Linux and Windows are available from the [Releases](https://github.com/yjruan/Nexus/releases) page.
 
-For the Linux version, users may need to grant execution permission before running the program:
+Users can download the appropriate executable file according to their operating system:
 
+* Linux executable: `Nexus`
+* Windows executable: `Nexus.exe`
+
+After downloading and extracting the file, place `input.dat` in the same working directory as the executable file.
+
+For Linux users, grant execution permission and run:
+
+```bash
 chmod +x Nexus
 ./Nexus
+```
 
-For the Windows version, users can run the executable file Nexus.exe from the command line.
+For Windows users, run the executable file from the command line:
 
-In both cases, the input file should be named input.dat and placed in the same working directory where the executable is run. Nexus will read the contents of input.dat and perform the corresponding analysis task.
+```bash
+Nexus.exe
+```
+
+In both cases, Nexus will automatically search for `input.dat`, read the analysis settings, and perform the corresponding calculation listed in the [Features Overview](#features-overview) section.
