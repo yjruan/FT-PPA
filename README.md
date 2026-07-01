@@ -11,13 +11,13 @@ It provides tools for characterizing polymer systems, including entanglement ana
 **FT-PPA** is an important module of this program.
 FT-PPA is an analysis of primitive paths for entangled polymers based on combining energy minimization with the Frenet trihedron
 geometric analysis. 
-More details about this method can be found in Macromolecules 2024, 57, 2792.
+More details about this method can be found in [Macromolecules 2024, 57, 2792](https://pubs.acs.org/doi/10.1021/acs.macromol.3c02054).
 
 However, I have no time to add all **Error** or **WARNING** message in program.
 Users are welcome to try this program and provide feedback. 
 Any comments or suggestions will be greatly appreciated, and the program will be continuously improved in future updates.
 
-Z1+ code is another widely used primitive path analysis for entangled polymers. Interested users can refer to this webpage for more information: XXX.
+Z1+ code is another widely used primitive path analysis for entangled polymers. Interested users can refer to [this webpage](https://github.com/mkmat/Z1plus-code) for more information
 
 
 ## Quick Start
