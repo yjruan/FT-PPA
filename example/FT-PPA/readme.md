@@ -5,9 +5,18 @@ The system is an equilibrium configuration of the Kremer–Grest model with a ch
 Further details of the simulated system can be found in Ref. 1.
 To run the example, place the `Nexus` executable in the directory and execute the program.
 
-
 `Nexus` will read the settings specified in `input.dat`. 
+The **Command** used in `input.dat` are described in [here](docs/FT-PPA.md).
+
 The following results will then be generated sequentially:
+
+1. **`EnNum.DAT`**
+   This file contains the average number of entanglements per chain in the system.
+
+2. **`data.chain_1_File_0`**
+   This file contains the identified entanglement along chain 1 and the segments (from neighbor chain) entangled with this chain. 
+   The file can be imported into visualization software such as [OVITO](https://www.ovito.org/) to generate the visualization shown below.
+ ![Visualization of the entanglements along chain 1](entanglement.png)
 
 
 ## References
