@@ -6,7 +6,7 @@ Further details of the simulated system can be found in Ref. 1.
 To run the example, place the `Nexus` executable in the directory and execute the program.
 
 `Nexus` will read the settings specified in `input.dat`. 
-The **Command** used in `input.dat` are described in [here](docs/FT-PPA.md).
+The **Command** used in `input.dat` are described in [here](../../docs/FT-PPA.md).
 
 The following results will then be generated sequentially:
 
