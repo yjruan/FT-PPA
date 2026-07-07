@@ -3,8 +3,8 @@
 This directory contains an energy minimized configuration (`dump.PPA_0`) and a reference input script (`input.dat`). 
 The system is an equilibrium configuration of the Kremer–Grest model with a chain length of (N = 300) and a bending potential parameter of 2.0. 
 Further details of the simulated system can be found in Ref [1](https://doi.org/10.1021/acs.macromol.3c02054).
-To run the example, place the `Nexus` executable in the directory and execute the program.
 
+To run the example, place the `Nexus` executable in the directory and execute the program.
 `Nexus` will read the settings specified in `input.dat`. 
 The **Command** used in `input.dat` are described in [here](../../docs/FT-PPA.md).
 
