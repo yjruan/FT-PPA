@@ -41,4 +41,12 @@ Users can find test configurations and their corresponding analysis results in t
   - [2.1 Radius of Gyration](docs/property_Rg.md)
   - [2.2 End-to-End Distance]
   - [2.3 Contour Length of Primitive Path](docs/property_Conlen.md)
+  <!--- [2.4 Contour Length of Primitive Path](docs/property_Conlen.md)>
+
+## License
+
+Nexus is distributed under the [GNU General Public License v3.0](LICENSE).
+
+Nexus incorporates source code from [FLAP](https://github.com/szaghi/FLAP), developed by Stefano Zaghi and used under the GNU General Public License v3.0. Additional third-party copyright and license information is provided in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 
