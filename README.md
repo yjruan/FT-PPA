@@ -39,8 +39,9 @@ Users can find test configurations and their corresponding analysis results in t
 
 - [2. Property: Chain Analysis](docs/property.md)
   - [2.1 Radius of Gyration](docs/property_Rg.md)
-  - [2.2 End-to-End Distance]
+  - [2.2 End-to-End Distance](docs/property_Re.md)
   - [2.3 Contour Length of Primitive Path](docs/property_Conlen.md)
+  - [2.4 Mean Square Internal Distance](docs/property_MSID.md)
   <!--- [2.4 Contour Length of Primitive Path](docs/property_Conlen.md)>
 
 ## License
