@@ -1,5 +1,5 @@
 # Introduction
-The program uses the [**FT-PPA** algorithm](https://pubs.acs.org/doi/10.1021/acs.macromol.3c02054) to analyze entanglements in polymers and also calculate other. 
+The program uses the [**FT-PPA** algorithm](https://pubs.acs.org/doi/10.1021/acs.macromol.3c02054) to analyze entanglements in polymers and also calculate other properties. 
 - [1. Overview](docs/Introduction.md#1-overview)
 - [2. Features](docs/Introduction.md#2-features)
 - [3. Install](docs/Introduction.md#3-install)
