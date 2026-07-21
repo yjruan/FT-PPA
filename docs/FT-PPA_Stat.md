@@ -27,7 +27,7 @@
 
 ## Examples
 ```text
-FTPPA Stat dump.PPA_0 EnNum NC  300"
+FTPPA Stat dump.PPA_0 EnNum NC  300
 FTPPA Stat dump.PPA_* EnPos format cfg
 ```
 ## Description
