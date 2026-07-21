@@ -15,11 +15,11 @@ The program uses the [**FT-PPA** algorithm](https://pubs.acs.org/doi/10.1021/acs
 ```text
    FTPPA Stat dump.PPA_0 EnNum NC 300
 ```
-This command counts (Stat) the entanglement number (EnNum) from dump.PPA_0, assuming a chain length (NC) of 300.
+This command means: counts (Stat) the entanglement number (EnNum) from dump.PPA_0, assuming a chain length (NC) of 300.
 
 4) Run the program: on Windows, double-click the executable; on Linux, grant execute permission using `chmod`, and run it.
 
-5) The program will output the properties as specified in `input.dat`. 
+5) The program will output the properties as specified in `input.dat`, such as `EnNum.DAT` in the example above. 
 
 6) Example input files and their corresponding outputs are available in the [`example`](example) directory.
 
