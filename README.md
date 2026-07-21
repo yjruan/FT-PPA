@@ -11,7 +11,11 @@ The program uses the [**FT-PPA** algorithm](https://pubs.acs.org/doi/10.1021/acs
 
 2) Place the executable, a file named `input.dat`, and particle coordinate files in the same directory.
 
-3) Specify the properties you want in the `input.dat`, such as entanglement number, the radius of gyration, etc. See the [Features](docs/Introduction.md#2-features) for details.
+3) Specify the properties you want in the `input.dat`, such as entanglement number, the radius of gyration, etc. See the [Features](docs/Introduction.md#2-features) for details. For example:
+```text
+   FTPPA Stat dump.PPA_0 EnNum NC 300
+```
+This command counts (Stat) the entanglement number (EnNum) from dump.PPA_0, assuming a chain length (NC) of 300.
 
 4) Run the program: on Windows, double-click the executable; on Linux, grant execute permission using `chmod`, and run it.
 
