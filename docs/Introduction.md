@@ -28,7 +28,7 @@ Users can directly use the precompiled executable files provided for Linux and W
 <!-- either compile the program from source code or 
  [Compile from Source on Linux] --(docs/QS_Complie.md)-->
 
-- [Use Precompiled Executable Files](docs/QS_Executable.md)
+- [Use Precompiled Executable Files](QS_Executable.md)
 
 Users can find test configurations and their corresponding analysis results in the `example` directory, which can be used to check the input format and verify the program output.
 
