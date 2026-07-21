@@ -16,7 +16,7 @@ chmod +x Nexus
 ./Nexus
 ```
 
-For Windows users, run the executable file from the command line:
+For Windows users, double-click the executable:
 
 ```bash
 Nexus.exe
