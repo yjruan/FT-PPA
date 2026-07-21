@@ -5,6 +5,7 @@ output-file: Nexus-Manual.docx
 
 input-files:
   - README.md
+  - docs/Introduction.md
   - docs/QS_Complie.md
   - docs/QS_Executable.md
   - docs/FT-PPA.md
