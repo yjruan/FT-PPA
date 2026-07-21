@@ -1,0 +1,31 @@
+from: gfm
+to: docx
+
+output-file: Nexus-Manual.docx
+
+input-files:
+  - README.md
+  - docs/QS_Complie.md
+  - docs/QS_Executable.md
+  - docs/FT-PPA.md
+  - docs/FT-PPA_Stat.md
+  - docs/FT-PPA_Dump.md
+  - docs/property.md
+  - docs/property_Rg.md
+  - docs/property_Re.md
+  - docs/property_Conlen.md
+  - docs/property_MSID.md
+  - example/README.md
+  - example/FT-PPA/readme.md
+  - example/property/readme.md
+  - THIRD_PARTY_NOTICES.md
+
+toc: true
+number-sections: true
+
+resource-path:
+  - .
+  - docs
+  - example
+  - example/FT-PPA
+  - example/property
