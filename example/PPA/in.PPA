@@ -1,0 +1,84 @@
+# Test in 2016/11/24,the version of lammps is 30Jul2016 
+ 
+# If find any bugs,questions or suggestions
+# please email to yjruan@ciac.ac.cn
+#=================Basic variable===================
+variable       bfile     equal 0          #begin file number
+variable       efile     equal 1          #end file number
+variable       filestep  equal 564180     #interval between files
+
+variable       Nstep1    equal    2000          #fisrt run
+variable       Nstep2    equal    200000        #second run
+
+variable       Rcut      equal    2^(1.0/6.0)   #Rcut in LJ potential
+variable       deltaT    equal    0.006
+variable       Ndump     equal    v_Nstep1+v_Nstep2
+#================Basic information================
+units          lj
+atom_style     angle
+special_bonds  fene
+
+#===============Set initial configuration==========
+read_data      data.chain
+mass           * 1.0
+
+group          molEnd type 2               #monomer is in chain end
+group          molMid subtract all molEnd  #else
+
+#=====================Force field==================
+pair_style     lj/cut ${Rcut}
+pair_coeff     * * 1.0 1.0
+pair_modify    shift yes        
+
+bond_style     fene
+bond_coeff     * 100.0 1.5 0.0 0.0
+
+angle_style    zero
+angle_coeff    *
+
+#===================Neighbourlist===================
+neighbor       0.4 bin
+neigh_modify   delay 0 every 1 check yes exclude molecule/intra all
+
+#===============cycle begin========================
+variable 			 count     loop  ${bfile} ${efile}
+label					 runloop
+print          "${count}"
+
+#================replace the atoms=================
+variable       filenum equal v_count*v_filestep
+read_dump      dump.RE-POSITION_${filenum} ${filenum} x y z
+velocity       all set 0.0 0.0 0.0 units box
+reset_timestep 0
+
+#===================Move1=========================
+fix            1 molMid nve
+fix            2 molMid langevin 0.001 0.001 0.05 104297
+fix            3 molEnd move linear 0.0 0.0 0.0
+
+timestep       ${deltaT}
+run            ${Nstep1}
+
+#===================Move2=========================
+unfix          2
+fix            2 molMid langevin 0.001 0.001 2 124297
+
+dump           1 all custom ${Ndump} dump.PPA_${count} id xu yu zu
+dump_modify    1 sort id format line "%7d %21.14f %21.14f %21.14f"
+
+timestep       ${deltaT}
+run            ${Nstep2}
+
+
+unfix 1
+unfix 2
+unfix 3
+undump         1
+#================cycle end========================
+if "${count} == ${efile}" then "jump SELF break"
+
+next					 count
+
+jump SELF runloop
+
+label break
